@@ -7,7 +7,7 @@ export const Home: React.FC = () => {
       <section className="px-4 py-16 md:py-24 max-w-7xl mx-auto w-full text-center">
         <div className="mb-8 flex justify-center">
             {/* Logo Presentation */}
-            <div className="w-48 h-48 md:w-64 md:h-64 rounded-3xl overflow-hidden shadow-xl mb-6">
+            <div className="w-48 h-48 md:w-64 md:h-64 rounded-3xl overflow-hidden shadow-xl mb-6 transform hover:scale-105 transition-transform duration-300 cursor-pointer">
                 <img 
                     src="./logo-square.png" 
                     alt="Huggn" 

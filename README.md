@@ -1,20 +1,55 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Huggn Website
 
-# Run and deploy your AI Studio app
+AI Therapy Companion Landing Page.
 
-This contains everything you need to run your app locally.
+## 🚀 How to Run Locally
 
-View your app in AI Studio: https://ai.studio/apps/drive/18Xlf3nJHtEQS4iagK5Uk5cKG6DNOqax7
+1.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-## Run Locally
+2.  **Start development server:**
+    ```bash
+    npm run dev
+    ```
+    The site will be available at `http://localhost:5173`.
 
-**Prerequisites:**  Node.js
+## 🌐 How to Deploy (GitHub Pages)
 
+This project is configured to deploy to `huggn.app` using the `gh-pages` package.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 1. Setup GitHub Repository
+- Create a new repository on GitHub named `huggn-website`.
+- Connect your local folder to GitHub (if not already done):
+  ```bash
+  git init
+  git remote add origin https://github.com/YOUR_USERNAME/huggn-website.git
+  ```
+
+### 2. Deploy to Live
+Run the following command to build the project and push it to the `gh-pages` branch:
+```bash
+npm run deploy
+```
+
+### 3. Custom Domain Configuration (Squarespace)
+The project includes a `public/CNAME` file for `huggn.app`. Ensure your DNS records are set as follows:
+
+**A Records (@):**
+- `185.199.108.153`
+- `185.199.109.153`
+- `185.199.110.153`
+- `185.199.111.153`
+
+**CNAME Record (www):**
+- Name: `www`
+- Data: `YOUR_USERNAME.github.io`
+
+### 4. Final Check
+Go to your GitHub Repository > **Settings > Pages** and:
+- Verify **Custom Domain** is set to `huggn.app`.
+- Ensure **Enforce HTTPS** is checked (may take a few minutes to become available).
+
+---
+© 2026 Ryon Labs LLC
